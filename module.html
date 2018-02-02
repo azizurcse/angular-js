@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+	<div ng-app="myapp" ng-controller="mycontrl">
+		
+		{{angularjs + " " +javascript}}
+	</div>
+
+	<script>
+		var app=angular.module("myapp",[]);
+		app.controller("mycontrl",function($scope){
+			$scope.angularjs="azizur";
+			$scope.javascript="rahman";
+		});
+	</script>
+</body>
+</html>
