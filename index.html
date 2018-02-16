@@ -5,11 +5,11 @@
 
 <p>Try to change the names.</p>
 
-<div ng-app="">
+<div ng-app="" ng-init="color='red'">
 
 css color: <input type="text" ng-model="firstName"><br>
 
-    <p style="background-color:{{ firstName }}">access css property</p>
+    <p style="background-color:{{ firstName }};color:{{ color }}">access css property</p>
 
 </div>
 
